@@ -27,3 +27,8 @@ public class VariableDemo {                  //class name must be capitialzed
         System.out.println(name);
     }
 }
+// Classes and objects should start with a capital letter (e.g., String, Integer)
+// Primitives always start with a lowercase letter (e.g., number, boolean)
+// Variables and method names start with a lowercase letter (e.g., main())
+// Multi-word names are camel case (e.g., vannaWhite)
+// Class constants (i.e., final instance and static variables) are generally all capitalized with words separated by underscores (e.g., const PRIVATE_FINAL_OBJECT = 'MY_MUTEX')
