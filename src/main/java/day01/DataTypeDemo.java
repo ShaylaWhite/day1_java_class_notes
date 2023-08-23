@@ -26,10 +26,9 @@ public class DataTypeDemo {
         boolean contentMatch = blue.equals("BLUE");  // Case-sensitive comparison
         System.out.println(contentMatch);
 
-        //Casting
         // Implicit casting: Conversion from smaller data types to larger data types happens automatically.
-        int a = 100;
-        double b = a; // int to double
+        int al = 100;
+        double b = al; // int to double
         System.out.println(b);
 
         // Explicit casting: Conversion from larger data types to smaller data types requires explicit marking.
@@ -41,5 +40,10 @@ public class DataTypeDemo {
         String strValue = "42";
         int intValue = Integer.valueOf(strValue);
         System.out.println(intValue); // Converting String to int using Integer.valueOf()
+
+        // Using Integer.parseInt() to convert String to int.
+        String anotherStrValue = "42";
+        int anotherIntValue = Integer.parseInt(anotherStrValue);
+        System.out.println(anotherIntValue);
     }
 }
