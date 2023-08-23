@@ -41,5 +41,27 @@ public class DataTypeDemo {
         String strValue = "42";
         int intValue = Integer.valueOf(strValue);
         System.out.println(intValue); // Converting String to int using Integer.valueOf()
+
+        // Nan/Null demonstration
+        // Using null:
+        // null indicates the absence of a value or uninitialized reference. It's used when a value is unknown or unavailable.
+        String noValue = null; // No specific value assigned
+        if (noValue == null) {
+            System.out.println("No value present."); // Checking for absence of value
+        }
+
+        // Using NaN:
+        // NaN ("Not-a-Number") represents undefined numerical results, often from invalid operations.
+        double undefinedNumber = 0.0 / 0.0; // Result of undefined operation
+        if (Double.isNaN(undefinedNumber)) {
+            System.out.println("Not a valid number."); // Checking for undefined numeric result
+        }
+
+        // Converting String to double, might result in NaN
+        String text = "not_a_number";
+        double convertedNumber = Double.parseDouble(text); // Converting text to number
+        if (Double.isNaN(convertedNumber)) {
+            System.out.println("Conversion resulted in not-a-number."); // Checking for conversion to numeric issue
+        }
     }
 }
