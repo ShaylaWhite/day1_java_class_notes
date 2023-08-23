@@ -27,6 +27,19 @@ public class DataTypeDemo {
         System.out.println(contentMatch);
 
         //Casting
+        // Implicit casting: Conversion from smaller data types to larger data types happens automatically.
+        int a = 100;
+        double b = a; // int to double
+        System.out.println(b);
 
+        // Explicit casting: Conversion from larger data types to smaller data types requires explicit marking.
+        double c = 100.7;
+        int d = (int) c; // double to int
+        System.out.println(d);
+
+        // Wrapper classes: Integer is a wrapper around int, providing additional methods.
+        String strValue = "42";
+        int intValue = Integer.valueOf(strValue);
+        System.out.println(intValue); // Converting String to int using Integer.valueOf()
     }
 }
