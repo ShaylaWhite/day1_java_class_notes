@@ -1,0 +1,9 @@
+In Java, abstract classes are classes that cannot be instantiated directly but serve as blueprints for other classes to inherit from. They are used to define a common structure and behavior that subclasses must implement. Here are the key rules and characteristics of Java abstract classes:
+Cannot be Instantiated: You cannot create an object of an abstract class using the new keyword. Abstract classes are meant to be extended by subclasses.
+May Contain Abstract and Concrete Methods: Abstract classes can have both abstract methods (methods without a body, defined using the abstract keyword) and concrete methods (methods with an implementation). Subclasses are required to provide implementations for the abstract methods.
+Subclasses Must Implement Abstract Methods: Subclasses that extend an abstract class must provide implementations for all abstract methods inherited from the abstract class. Failure to do so will result in a compilation error.
+Can Have Constructors: Abstract classes can have constructors, which are used to initialize fields and perform any necessary setup when an instance of a subclass is created.
+Can Have Fields and Non-Abstract Methods: Abstract classes can have instance fields and methods with implementations. These fields and methods are inherited by subclasses.
+Can Extend Other Classes and Implement Interfaces: Abstract classes can extend other classes (abstract or concrete) and can also implement interfaces.
+Can Be Extended by Concrete and Abstract Subclasses: Abstract classes can be extended by both concrete (non-abstract) and abstract subclasses. Concrete subclasses inherit and provide implementations for the abstract methods, while abstract subclasses may further extend the hierarchy.
+Cannot Be Marked as Final: An abstract class cannot be marked as final, as it is intended to be extended
